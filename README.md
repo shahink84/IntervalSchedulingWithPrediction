@@ -1,5 +1,6 @@
 # IntervalSchedulingWithPrediction
 This repo contains the code for the project “Online Interval Scheduling with Predictions”. 
+Send inquires to Shahin Kamali (kamalis@yorku.ca)
 
 ## Files Description: 
 
