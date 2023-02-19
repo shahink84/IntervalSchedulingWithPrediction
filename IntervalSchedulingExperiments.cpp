@@ -137,7 +137,7 @@ void scheduling_experiment(string fileName, int nSteps, double fpRatio, double f
         set<interval> inputSet(&I[0], &I[n]);
         set<interval> optI = algLibrary.getOpt(inputSet); // used as a baseline for scaling error
 
-        set<interval> hatSet(&IHat[0], &IHat[n]); // the optimal solution for prediction; used in Trust, TrustGreedy
+        set<interval> hatSet(&IHat[0], &IHat[n-fn+fp]); // the optimal solution for prediction; used in Trust, TrustGreedy
         set<interval> optHat = algLibrary.getOpt(hatSet);
 
         double eta_scaled = (double)errorOpt.size() / (double)optI.size();
